@@ -5,14 +5,14 @@ function Car(props) {
   const { showOrder, setShowOrder } = props
   return (
     <div
-      className={`lg:col-span-2 fixed right-0 top-0 bg-[#1F1D2B] w-full h-full lg:right-0 lg:w-[430px] transition-all z-50 ${
+      className={`lg:col-span-2 fixed top-0 bg-[#1F1D2B] w-full h-full lg:right-0 lg:w-[430px] transition-all z-50 ${
         showOrder ? 'right-0' : '-right-full'
       }`}
     >
       {/* Orders */}
       <div className='relative pt-16 lg:pt-8 text-gray-300 p-8 h-full'>
         <RiCloseLine
-          onClick={() => setShowOrder(false)}
+          onClick={(e) => setShowOrder(false)}
           className='absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl lg:hidden'
         />
         <h1 className='text-2xl my-4'>Orders #151416</h1>
